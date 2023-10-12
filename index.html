@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculator.css" type="text/css">
+    <script src="Calculator.js"></script>
+    <title>calculator</title>
+</head>
+<body>
+    <div class="container-fluid col-xs-12">
+        <fieldset id="container">
+            <form name="calculator">
+
+                <input type="text" id="screen" readonly>
+
+                <input id="clearBtn" class="btn display" type="button" value="C" onclick="cleardisplay()">
+                <input id="digitBtn" class="btn display" type="button" value="+/-" onclick="opposite()">
+                <input id="digitBtn" class="btn display" type="button" value="%" onclick="percentage()">
+                <input id="digitBtn" class="btn display" type="button" value="DEL " onclick="back()">
+                <br>
+
+                <input class="btn display" type="button" value="7" onclick="buttonclick(7)">
+                <input class="btn display" type="button" value="8" onclick="buttonclick(8)">
+                <input class="btn display" type="button" value="9" onclick="buttonclick(9)">
+                <input class="btn math" type="button" value="/" onclick="buttonclick('/')">
+                <br>
+                <input class="btn display" type="button" value="4" onclick="buttonclick(4)">
+                <input class="btn display" type="button" value="5" onclick="buttonclick(5)">
+                <input class="btn display" type="button" value="6" onclick="buttonclick(6)">
+                <input class="btn math" type="button" value="*" onclick="buttonclick('*')">
+                <br>
+                <input class="btn display" type="button" value="1" onclick="buttonclick(1)">
+                <input class="btn display" type="button" value="2" onclick="buttonclick(2)">
+                <input class="btn display" type="button" value="3" onclick="buttonclick(3)">
+                <input class="btn math" type="button" value="-" onclick="buttonclick('-')">
+                <br>
+                <input class="btn display" type="button" value="0" onclick="buttonclick(0)">
+                <input class="btn display" type="button" value="." onclick="buttonclick('.')">
+                <input class="btn math" type="button" value="=" onclick="equalclick()">
+                <input class="btn math" type="button" value="+" onclick="buttonclick('+')">
+
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
